@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="">
+    <script src="jquery.js"></script>
+    <style>
+        body {
+            background: url("2.jpg") no-repeat fixed center;
+            background-size: cover ;
+
+        }
+        .container {
+            display: none;
+            width: 200px;
+            height: 100px;
+            position: fixed;
+            left: calc(50% - 100px);
+            top: calc(50vh - 50px);
+            -webkit-box-shadow: inset 58px 58px 50px -57px rgba(108,150,212,1);
+            -moz-box-shadow: inset 58px 58px 50px -57px rgba(108,150,212,1);
+            box-shadow: inset 58px 58px 50px -57px rgba(108,150,212,1);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            padding: 15px;
+            background: url("2.jpg") no-repeat center;
+            background-size: cover ;
+        }
+        .title {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Tahoma;
+        }
+        .content {
+            font-size: 15px;
+            font-family: Tahoma;
+        }
+        .close {
+            float:right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<button onclick="$('.container').fadeIn(400);">Click me!</button>
+<div class="container">
+    <div class="close" onclick="$('.container').fadeOut(400);">x</div>
+    <div class="title">Ошибка!</div>
+    <div class="content">ahfdhaadfhadfh
+        adfhahfadhadfhadfhadfhadfha
+        dfhadfhadfhadfhadfhadfhadfh</div>
+</div>
+
+</body>
+</html>
